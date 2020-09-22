@@ -1,29 +1,30 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+    <div id='wrapper-app'>
+        <TheHomeViewHeader />
+        <router-view />
+    </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+<script lang='ts'>
+    import Vue from 'vue';
+    import { Component } from 'vue-property-decorator';
+    import TheHomeViewHeader from '@/components/home-page/TheHomeViewHeader.vue';
 
-@Component({
-  components: {
-    HelloWorld,
-  },
-})
-export default class App extends Vue {}
+    @Component({
+        components: {
+            TheHomeViewHeader
+        }
+    })
+    export default class App extends Vue {
+       
+    }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang='scss'>
+    #wrapper-app {
+        margin: 0px $home-view-horizonal-margins;
+        color: $base-black;
+        font-family: 'Bahnschrift';
+        background-color: $base-white;
+    }
 </style>
