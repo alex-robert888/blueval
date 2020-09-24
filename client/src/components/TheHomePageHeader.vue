@@ -33,6 +33,9 @@
         height: 10vh;
         width: 100%;
         box-sizing: border-box;
+        top: 0;
+        left: 0;
+        z-index: 99;
         > h1 {
             margin-left: auto;
         }

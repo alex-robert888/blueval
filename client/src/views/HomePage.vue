@@ -26,8 +26,5 @@
 <style lang='scss' scoped>
     .wrapper-home-page {
         width: 100vw;
-        > section {
-             padding: 0 15%;
-        }
     }
 </style>
