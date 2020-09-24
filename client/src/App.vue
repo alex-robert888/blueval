@@ -1,6 +1,6 @@
 <template>
     <div id='wrapper-app'>
-        
+        <router-view />
     </div>
 </template>
 
@@ -15,6 +15,6 @@
     }
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
     
 </style>
