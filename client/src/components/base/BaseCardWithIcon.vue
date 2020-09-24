@@ -4,7 +4,7 @@
             <slot name="icon" />
         </div>
         <slot name="heading" />
-        <slot name="text" />
+        <div class="slot-text"><slot name="text" /></div>
     </div>
 </template>
 
@@ -29,5 +29,11 @@
         border-radius: 50%;
         width: $icon-frame-diameter;
         height: $icon-frame-diameter;
+        margin-bottom: 3vh;
+    }
+
+    .slot-text {
+        margin-top: 2vh;
+        width: 80%;
     }
 </style>

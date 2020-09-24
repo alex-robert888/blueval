@@ -8,7 +8,7 @@
 <script lang='ts'>
     import Vue from 'vue';
     import { Component } from 'vue-property-decorator';
-    import TheHomeViewHeader from '@/components/home-page/TheHomeViewHeader.vue';
+    import TheHomeViewHeader from '@/components/home-view/TheHomeViewHeader.vue';
 
     @Component({
         components: {

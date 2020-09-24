@@ -2,8 +2,8 @@ module.exports = {
     css: {
       loaderOptions: {
         sass: {
-          prependData: `@import "@/assets/style/variables.scss";
-                        @import "@/assets/style/classes.scss";
+          prependData: `@import "@/assets/style/_variables.scss";
+                        @import "@/assets/style/_classes.scss";
                         `
         }
       }
