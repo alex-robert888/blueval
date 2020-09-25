@@ -32,7 +32,7 @@
         align-items: center;
         height: 10vh;
         width: 100%;
-        box-sizing: border-box;
+        background-color: $base-white;
         top: 0;
         left: 0;
         z-index: 99;

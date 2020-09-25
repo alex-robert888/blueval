@@ -1,0 +1,16 @@
+.input-or-textarea {
+    border: none;
+    margin: 1vh 0;
+    padding: 0 1vw;
+    box-sizing: border-box;
+    outline: 1px solid  #D8D8D8;
+}
+
+.textarea {
+    padding-top: 1.5vh;
+    resize: none;
+}
+
+.label {
+    font-weight: 400;
+}
