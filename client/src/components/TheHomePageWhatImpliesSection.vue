@@ -53,6 +53,7 @@
         width: 100%;
     }
 
+
     #wrapper-what-implies-cards {
         width: 100%;
         height: 45vh;

@@ -1,5 +1,7 @@
 <template>
     <section id='wrapper-the-home-page-faq-section' class="main-section">
+        <a name="faq" class="a--redirect"></a>
+
         <section class="faq-left-side">
             <h2>FAQ</h2>
             <span>Întreabă-ne orice nelămurire mai jos:</span>

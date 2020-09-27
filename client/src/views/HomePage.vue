@@ -3,10 +3,13 @@
         <TheHomePageHeader />
         <TheHomePageHeroSection />
         <TheHomePageOurMissionSection />
+        <a name="de-ce" class="a--redirect"></a>
         <section class="whitespace"></section>
         <TheHomePageWhyYouNeedSection />
+        <a name="ce-presupune" class="a--redirect"></a>
         <section class="whitespace"></section>
         <TheHomePageWhatImpliesSection />
+        <a name="documente" class="a--redirect"></a>
         <section class="whitespace"></section>
         <TheHomePageDocumentsAndLegislationSection />
         <section class="whitespace"></section>

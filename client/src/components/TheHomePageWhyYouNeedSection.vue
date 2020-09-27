@@ -1,5 +1,7 @@
 <template>
     <section id='wrapper-the-home-page-why-you-need' class='main-section'>
+        <a name="de-ce" class="a--redirect"></a>
+
         <BaseOverlinedHeading color="#3BFAFF">
             <h2 class="overlined-heading-font">Ai nevoie de analiză de risc dacă: </h2>
         </BaseOverlinedHeading>

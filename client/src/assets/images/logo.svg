@@ -1,15 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="26" viewBox="0 0 120 26">
-  <g id="Group_50" data-name="Group 50" transform="translate(-428 -1622)">
-    <g id="Group_14" data-name="Group 14" transform="translate(428 1622)">
-      <text id="BLU_" data-name="BLU   " transform="translate(0 21)" fill="#4b4b4e" font-size="26" font-family="Bahnschrift" font-weight="700" letter-spacing="0.01em"><tspan x="0" y="0" xml:space="preserve">BLU   </tspan></text>
-    </g>
-    <text id="VAL" transform="translate(499 1643)" fill="#4b4b4e" font-size="26" font-family="Bahnschrift" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="0">VAL</tspan></text>
-    <g id="Group_13" data-name="Group 13" transform="translate(479.847 1624.652)">
-      <rect id="Rectangle_43" data-name="Rectangle 43" width="4.705" height="3.65" transform="translate(0 3.871)" fill="#46beff"/>
-      <rect id="Rectangle_44" data-name="Rectangle 44" width="4.705" height="3.65" transform="translate(0 11.061)" fill="#4f55ff"/>
-      <rect id="Rectangle_40" data-name="Rectangle 40" width="16.085" height="4.425" transform="translate(0 0)" fill="#3bfaff"/>
-      <rect id="Rectangle_41" data-name="Rectangle 41" width="16.085" height="4.425" transform="translate(0 7.079)" fill="#5dafff"/>
-      <rect id="Rectangle_42" data-name="Rectangle 42" width="16.085" height="4.425" transform="translate(0 14.158)" fill="#3c03d8"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="35" viewBox="0 0 100 35">
+  <g id="Group_107" data-name="Group 107" transform="translate(-703 -65)">
+    <text id="BLUEVAL" transform="translate(703 92)" fill="#212121" font-size="22" font-family="Nunito-Bold, Nunito" font-weight="700" letter-spacing="0.01em"><tspan x="0" y="0">BLUEVAL</tspan></text>
+    <rect id="Rectangle_103" data-name="Rectangle 103" width="27" height="5" transform="translate(704 65)" fill="#0311d8"/>
   </g>
 </svg>

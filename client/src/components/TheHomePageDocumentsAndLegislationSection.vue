@@ -1,5 +1,7 @@
 <template>
     <section id='wrapper-the-home-page-documents-and-legislation-section' class='main-section'>
+        <a name="documente"></a>
+
         <article class="left-side">
             <h2>Documente</h2>
             <div>

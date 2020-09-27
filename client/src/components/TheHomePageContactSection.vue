@@ -1,5 +1,6 @@
 <template>
     <section id='wrapper-the-home-page-contact-section' class="main-section">
+        <a name="contact" class="a--redirect"></a>
         <form action="">
             <label for="email" class="text label">Email</label>
             <input type="text" name="email" id="" class="input-or-textarea">
@@ -29,6 +30,10 @@
         height: 80vh;
         width: 100%;
         overflow: auto;
+        .a--redirect {
+            margin-top: -10vh;
+        }
+
         > form {
             display: flex;
             flex-direction: column;

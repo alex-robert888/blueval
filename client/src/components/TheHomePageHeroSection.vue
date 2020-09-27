@@ -1,18 +1,7 @@
 <template>
     <section id='wrapper-the-home-page-hero-section' class='main-section'>
-        <section class="left-part">
-            <img src="../assets/images/overline-multicolor.svg" alt="">
-            <h1>Evaluări de risc la securitate fizică</h1>
-            <h2 class="text">Asigură-ți securitatea afacerii tale apelând la profesioniști. Procesul este simplu și gândit astfel încât activitatea ta să nu fie perturbată, în timp ce noi lucrăm la standarde de exigență ridicate. Suntem interesați să realizăm și să îți livrăm un produs pe care să îl utilizezi ușor, rapid și predictibil.</h2>
-            <div class="button center">
-                <span>Contactează-ne</span>
-                <img src="../assets/images/contact-icon.svg" alt="">
-            </div>
-        </section>
-
-        <section class="right-part">
-            <TheHeroSectionSvg />
-        </section>
+        <a name="home" class="a--redirect"></a>
+       
     </section>
 </template>
 
@@ -35,11 +24,16 @@
 <style lang='scss' scoped>
     $the-hero-section-height: calc(100vh - #{$the-header-height});
 
+
     #wrapper-the-home-page-hero-section {
         margin-top: $the-header-height;
         height: $the-hero-section-height;
         width: 100%;
         display: flex;
+
+        > a {
+            margin-top: -10vh;
+        }
 
         .left-part, .right-part {
             box-sizing: border-box;
