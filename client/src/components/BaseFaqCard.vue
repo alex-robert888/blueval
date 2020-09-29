@@ -1,7 +1,10 @@
 <template>
     <article class='wrapper-base-faq-card'>
-        <h3 class="text"><span class="text--bold">Q: </span><slot name="question"/></h3>
-        <p class="text"><span class="text--bold">A: </span><slot name="answer"/></p>
+        <div class="question">
+            <img src="../assets/images/question-mark.svg" alt="">
+            <h3 class="text text--bold"><slot name="question"/></h3>
+        </div>
+        <p><slot name="answer"/></p>
     </article>
 </template>
 
@@ -18,20 +21,25 @@
 
 <style lang='scss' scoped>
     .wrapper-base-faq-card {
-        width: 35vw;
-        background: #E7F0F7;
-        display: table;
-        border-collapse: separate;
-        border-spacing: 2rem 1.5rem;
+        background-color: white;
+        overflow: auto;
+        box-sizing: border-box;
+        padding: 4vh 2vw;
 
-        > h3, > p {
-            display: table-row;
+        .question {
+            display: flex;
+
+            > h3 {
+                margin-left: 0.8vw;
+            }
         }
 
-        > h3 {
-            font-weight: bold;
-            margin-top: 3vh;
+        > p {
+            line-height: 4vh;
+            font-weight: 300;
+            width: 85%;
+            margin-left: 2vw;
+            font-size: 0.9rem;
         }
-
     }
 </style>

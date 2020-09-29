@@ -13,11 +13,11 @@
                 </ul>            
             </nav>
         </div>
-        <ScrollIndicator
+        <!-- <ScrollIndicator
             height="0.55vh"
-            color="linear-gradient(90deg, rgba(60,3,216,1) 0%, rgba(93,175,255,1) 50%, rgba(59,250,255,1) 100%)"
+            color="#0311D8"
             background="none"
-        />
+        /> -->
     </section>
 </template>
 
@@ -43,13 +43,19 @@
         left: 0;
         position: fixed;
         width: 100%;
-        z-index: 99;
+        z-index: 90;
+
         #navigation-bar {
             display: flex;
             align-items: center;
             height: 10vh;
             width: 100%;
             background-color: $base-white;
+                
+            > img {
+                margin-left: 30vw;
+            }
+
             > h1 {
                 margin-left: auto;
             }
@@ -63,6 +69,7 @@
                         > a {
                             text-decoration: none;
                             color: $base-dark-gray;
+                            font-size: 0.88rem;
                         }
                     }
                 }

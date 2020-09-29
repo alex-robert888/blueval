@@ -1,8 +1,8 @@
 
 .text {
-    line-height: 26pt;
     font-weight: 100;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    line-height: 2.75rem;
 }
 
 .overlined-heading-font {
@@ -13,4 +13,13 @@
 
 .text--bold {
     font-weight: bold;
+}
+
+.heading {
+    letter-spacing: 0.6rem;
+    font-size: 2.05rem;
+    font-weight: 400;
+    color: #0311D8;
+    margin-top: 8vh;
+    margin-bottom: 6vh;
 }

@@ -1,15 +1,9 @@
 <template>
     <section id='wrapper-the-home-page-our-mission-section' class='main-section'>
-        <img src="../assets/images/bubble-our-mission.svg" alt="">
-        <article class="text">
-            <h2>Misiunea Noastră</h2>
-            <h3 class="text">De cele mai multe ori pare neverosimilă producerea unui incident de securitate chiar în interiorul afacerii tale ! Cu toate acestea, ele se întâmplă  zilnic, mai aproape sau mai departe de noi, sunt mediatizate mai mult sau mai puțin, însă daunele provocate – materiale, de imagine / prestigiu sau, în situații grave,  angajaților  sau clienților – sunt greu de surmontat, uneori imposibil.</h3>
-        </article>
-        
-        <article class="image">
-            <img src="../assets/images/writing-man.png" alt="">
-            <img src="../assets/images/repeat-grid-circles.svg" alt="">
-        </article>
+        <div>
+            <h2 class="heading"> AM NEVOIE DE EVALUARE DE RISC? </h2>
+            <p class="text">De cele mai multe ori pare neverosimilă producerea unui incident de securitate chiar în interiorul afacerii tale! Cu toate acestea, ele se întâmplă  zilnic, mai aproape sau mai departe de noi, sunt mediatizate mai mult sau mai puțin, însă daunele provocate – materiale, de imagine / prestigiu sau, în situații grave,  angajaților  sau clienților – sunt greu de surmontat, uneori imposibil.</p>
+        </div>
     </section>
 </template>
 
@@ -25,47 +19,20 @@
 </script>
 
 <style lang='scss' scoped>
-    #wrapper-the-home-page-our-mission-section {
-        height: 85vh;
+    #wrapper-the-home-page-our-mission-section > div {
+        margin-top: 15vh;
+        height: 40vh;
         width: 100%;
-        position: relative;
-        > img:first-of-type {
-            position: absolute;
-            top: 14vh;
-            z-index: -1;
+        background-clip: content-box;
+        background: linear-gradient(90deg, rgba(241,242,255,1) 0%, rgba(220,243,255,1) 100%);
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > p {
+            width: 55%;
+            text-align: center;
         }
-
-        > article.text {
-            position: absolute;
-            top: 33vh;
-            left: 20vw;
-            width: 35%;
-
-            > h2 {
-                font-size: 3.5rem;
-                color: $base-mid-blue;
-            }
-
-            > h3 {
-                margin-top: 3vh;
-            }
-        }
-
-        > article.image {
-            position: absolute;
-            top: 43vh;
-            left: 65vw;
-            > img:first-of-type {
-                width: 25vw;
-            }
-
-            > img:last-of-type {
-                position: absolute;
-                left: 20vw;
-                top: 29vh;
-            }
-        }
-
-
     }
 </style>

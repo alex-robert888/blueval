@@ -1,31 +1,26 @@
 <template>
     <section id='wrapper-the-home-page-why-you-need' class='main-section'>
-        <a name="de-ce" class="a--redirect"></a>
+        <div>
+            <h2 class="heading">AM NEVOIE DE ANALIZĂ DE RISC DACĂ: </h2>
 
-        <BaseOverlinedHeading color="#3BFAFF">
-            <h2 class="overlined-heading-font">Ai nevoie de analiză de risc dacă: </h2>
-        </BaseOverlinedHeading>
-
-        <div id="wrapper-do-you-need-cards">
-            <section id="do-you-need-cards">
-                <BaseCard 
+            <section>
+                <BaseCard
                     v-for="(card, index) in cards"
                     v-bind:key="index"
-                    v-bind:size="cardSize"
                 >
                     <template v-slot:icon>
-                        <img v-bind:src="requireImage(card.icon)" alt="" class="do-you-need-icon">
+                        <img v-bind:src="requireImage(card.icon)" alt="" class="icon">
                     </template>
-
+                    
                     <template v-slot:heading>
-                        {{ card.heading }}
+                        {{card.heading}}
                     </template>
-
+                    
                     <template v-slot:text>
-                        {{ card.text }}
+                        {{card.text}}
                     </template>
                 </BaseCard>
-            </section>  
+            </section>
         </div>
     </section>
 </template>
@@ -46,7 +41,6 @@
     })
     export default class TheHomePageWhyYouNeed extends Vue {
         cards = cards;
-        cardSize = ['10vw', '30vh'];
 
         requireImage(img: string): void {
             console.log(img);
@@ -56,29 +50,31 @@
 </script>
 
 <style lang='scss' scoped>
-    #wrapper-the-home-page-why-you-need {
-        height: 110vh;
+    #wrapper-the-home-page-why-you-need > div {
+        height: 130vh;
         width: 100%;
-    }
-
-    #wrapper-do-you-need-cards {
-        margin-top: 20vh;
-        width: 100%;
-        height: 100vh;
+        background: linear-gradient(45deg,#5A60B1 0%,#5174C7 100%);
+        overflow: auto;
         display: flex;
-        justify-content: center;
-    }
+        flex-direction: column;
+        align-items: center;
 
-    #do-you-need-cards {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 4vh 10vw;
-    }
+        > h2 {
+            color: $base-white;
+        }
 
-    .do-you-need-icon {
-        width: 6vw;
+        > section {
+            margin-top: 8vh;
+            width: 80%;
+            height: auto;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .icon {
+            height: 7vh;
+        }
     }
 </style>

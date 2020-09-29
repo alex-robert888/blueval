@@ -13,9 +13,10 @@
         <section class="whitespace"></section>
         <TheHomePageDocumentsAndLegislationSection />
         <section class="whitespace"></section>
+        <TheHomePageContactSection />
+        <section class="whitespace"></section>
         <TheHomePageFAQSection />
         <section class="whitespace"></section>
-        <TheHomePageContactSection />
     </section>
 </template>
 
@@ -54,7 +55,7 @@
     }
 
     .whitespace {
-        height: 27.7vh;
+        height: 5vh;
         width: 100%;
     }
 </style>

@@ -1,19 +1,24 @@
 <template>
     <section id='wrapper-the-home-page-hero-section' class='main-section'>
         <a name="home" class="a--redirect"></a>
-       
+        <img src="../assets/images/business-building.jpg" alt="">
+        <article>
+            <h1>Evaluări de risc la securitate fizică</h1>
+            <h2>Asigură-ți securitatea afacerii tale apelând la profesioniști. Procesul este simplu și gândit astfel încât activitatea ta să nu fie perturbată, în timp ce noi lucrăm la standarde de exigență ridicate. Suntem interesați să realizăm și să îți livrăm un produs pe care să îl utilizezi ușor, rapid și predictibil.</h2>
+            <ButtonContact class="button-contact" />
+        </article>
     </section>
 </template>
 
 <script lang='ts'>
     import Vue from 'vue';
     import { Component } from 'vue-property-decorator';
-    import TheHeroSectionSvg from '@/components/TheHeroSectionSvg.vue';
+    import ButtonContact from '@/components/ButtonContact.vue';
 
 
     @Component({
         components: {
-            TheHeroSectionSvg
+            ButtonContact
         }
     })
     export default class TheHomePageHeroSection extends Vue {
@@ -35,50 +40,36 @@
             margin-top: -10vh;
         }
 
-        .left-part, .right-part {
-            box-sizing: border-box;
+        > img {
+            position: absolute;
+            top: 3.5vh;
+            z-index: 99;
+            height: 87.5vh;
         }
 
-        .left-part {
-            width: 40%;
-            height: 100%;
-            padding-top: 7.5%;
+        > article {
+            margin-left: 30vw;
+            margin-top: 13vh;
+
+            > h1, > h2 {
+                width: 38vw;
+            }
 
             > h1 {
-                margin-top: 2vh;
-                font-size: 4rem;
-                line-height: 65pt;
+                font-size: 5.5rem;
+                font-weight: 100;
             }
 
             > h2 {
-                margin-top: 4%;
-            }
-
-            > div {
-                margin-top: 10%;
-                height: 5.75vh;
-                width: 17.5vw;
-                background-color: $base-dark-blue;
-
-                > span {
-                    color: $base-white;
-                    letter-spacing: 0.15rem;
-                    font-size: 1rem;
-                }
-
-                > img {
-                    margin-left: 0.5vw;
-                    width: 1.1vw;
-                }
+                font-weight: 100;
+                margin-top: 3.5vh;
+                font-size: 1.05rem;
+                line-height: 2.75rem;
             }
         }
 
-        .right-part{
-            margin-left: auto;
-            width: 50%;
-            height: 100%;
-            display: flex;
-            justify-content: flex-end;
+        .button-contact {
+            margin-top: 6vh;
         }
     }
 </style>

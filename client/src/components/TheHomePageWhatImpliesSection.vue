@@ -1,23 +1,15 @@
 <template>
     <section id='the-home-page-what-implies-section' class='main-section'>
-        <BaseOverlinedHeading color="#5DAFFF">
-            <h2 class="overlined-heading-font">Ce presupune?</h2>
-        </BaseOverlinedHeading>
-
         <div id="wrapper-what-implies-cards">
+            <h2 class="heading">CE PRESUPUNE?</h2>
             <section id="what-implies-cards">
-                <BaseCard 
+                <div 
                     v-for="(card, index) in cards"
                     v-bind:key="index"
                 >
-                    <template v-slot:icon>
-                        <img v-bind:src="requireImage(card.icon)" alt="" class="what-implies-icon">
-                    </template>
-
-                    <template v-slot:text>
-                        {{ card.text }}
-                    </template>
-                </BaseCard>
+                    <img v-bind:src="requireImage(card.icon)" alt="" class="what-implies-icon">
+                    <p class="text">{{ card.text }}</p> 
+                </div>
             </section>  
         </div>
     </section>
@@ -49,26 +41,38 @@
 
 <style lang='scss' scoped>
     #the-home-page-what-implies-section {
-        height: 65vh;
+        height: 68vh;
         width: 100%;
     }
 
 
     #wrapper-what-implies-cards {
-        width: 100%;
-        height: 45vh;
+        height: 68vh;
         display: flex;
-        justify-content: center;
-        margin-top: 20vh;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        border: solid 1px #E4E4E4; 
     }
 
     #what-implies-cards {
         width: 100%;
         height: 100%;
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 0 10vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > div {
+            display: flex;
+            align-items: center;
+            width: 60%;
+            margin-top: 5vh;
+
+            > p {
+                margin-left: 3vw;
+                width: 80%;
+            }
+        }
     }
 
     .what-implies-icon {
