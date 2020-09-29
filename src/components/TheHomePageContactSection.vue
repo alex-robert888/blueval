@@ -4,7 +4,7 @@
         <div>
             <div class="left-side">
                 <a name="contact" class="a--redirect"></a>
-                <form name="contact" netlify>
+                <form name="contact" data-netlify="true">
                     <label for="email" class="text label">Email</label>
                     <input type="text" name="email" id="" class="input-or-textarea">
                 
