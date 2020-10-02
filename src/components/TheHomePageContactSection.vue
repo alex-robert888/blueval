@@ -6,12 +6,12 @@
                 <a name="contact" class="a--redirect"></a>
                 <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                     <label for="email" class="text label">Email</label>
-                    <input type="text" name="email" id="" class="input-or-textarea">
+                    <input v-model="form.email" type="text" name="email" id="" class="input-or-textarea">
                 
                     <label for="mesaj" class="text label">Mesaj</label>
-                    <textarea type="text" name="mesaj" id="" class="textarea input-or-textarea" />
+                    <textarea v-model="form.message" type="text" name="mesaj" id="" class="textarea input-or-textarea" />
 
-                    <button type="submit" class="button">Trimite</button>
+                    <button v-on:click="postContact()" type="submit" class="button">Trimite</button>
                 </form>
             </div>        
             <TheHomePageContactSectionSvg class="right-side" />
@@ -23,6 +23,8 @@
     import Vue from 'vue';
     import { Component } from 'vue-property-decorator';
     import TheHomePageContactSectionSvg from './TheHomePageContactSectionSvg.vue';
+    import axios from 'axios';
+
 
     @Component({
         components: {
@@ -30,7 +32,22 @@
         }
     })
     export default class TheHomePageContactSection extends Vue {
-       
+       form = {
+           email: "",
+           message: ""
+       }
+
+       async postContact() {
+            try {
+                await axios.post('/', {
+                    email: this.form.email,
+                    message: this.form.message
+                });
+            }
+            catch(err) {
+                alert(err.message);
+            }
+        }
     }
 </script>
 
