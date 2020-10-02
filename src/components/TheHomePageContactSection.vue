@@ -4,7 +4,7 @@
         <div>
             <div class="left-side">
                 <a name="contact" class="a--redirect"></a>
-                <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                     <label for="email" class="text label">Email</label>
                     <input type="text" name="email" id="" class="input-or-textarea">
                 
