@@ -45,6 +45,7 @@
             top: 3.5vh;
             z-index: 99;
             height: 87.5vh;
+            width: 24vw;
         }
 
         > article {
@@ -52,7 +53,7 @@
             margin-top: 13vh;
 
             > h1, > h2 {
-                width: 38vw;
+                width: 40vw;
             }
 
             > h1 {
