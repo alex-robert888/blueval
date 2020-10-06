@@ -50,31 +50,57 @@
 </script>
 
 <style lang='scss' scoped>
-    #wrapper-the-home-page-why-you-need > div {
+    #wrapper-the-home-page-why-you-need {
         height: 130vh;
         width: 100%;
-        background: linear-gradient(45deg,#5A60B1 0%,#5174C7 100%);
-        overflow: auto;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        > div {
+            width: 100%;
+            background: linear-gradient(45deg,#5A60B1 0%,#5174C7 100%);
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            > h2 {
+                color: $base-white;
+            }
 
-        > h2 {
-            color: $base-white;
+            > section {
+                margin-top: 8vh;
+                width: 80%; 
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 3rem;
+            }
+
+            .icon {
+                height: 7vh;
+            }
         }
+    }
 
-        > section {
-            margin-top: 8vh;
-            width: 80%;
-            height: auto;
-            display: grid;
-            grid-template-rows: 1fr 1fr;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 3rem;
-        }
+    @media all and (max-width: 480px) {
+        #wrapper-the-home-page-why-you-need {
 
-        .icon {
-            height: 7vh;
+            > div {
+                > h2 {
+                    font-size: 1.2rem !important; 
+                    color: $base-white;
+                }
+
+                > section {
+                    grid-template-rows: 1fr 1fr 1fr;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1rem;
+                }
+
+                .icon {
+                    height: 5vh;
+                }
+            }
         }
     }
 </style>

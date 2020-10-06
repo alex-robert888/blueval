@@ -51,16 +51,17 @@
             > img {
                 &:first-of-type {
                     margin-left: 30vw;
-                    @media all and (max-width: 480px) {
+                    height: 3.7vh;
+                    @media all and (max-width: 900px) {
                         margin-left: 0vw;
                     }
                 }
 
                 &:last-of-type{
-                    width: 7.5vw;
+                    width: 7.25vw;
                     margin-left: auto;
                     cursor: pointer;
-                    @media all and (min-width:  480px) {
+                    @media all and (min-width: 900px) {
                         display: none;
                     }   
                 }
@@ -70,7 +71,7 @@
                 margin-left: auto;
             }
             > nav {
-                @media all and (max-width:  480px) {
+                @media all and (max-width: 900px) {
                     display: none;
                 }
                 margin-left: auto;

@@ -54,4 +54,25 @@
     .break-line {
         margin-top: 2vh;
     }
+
+    @media all and (max-width: 480px) {
+        .wrapper-base-card {
+            width: 90%;
+            height: 45vh;
+            padding: 0.5rem; 
+        }
+
+        h3 {
+            font-size: 0.85rem;
+        }
+
+        p {
+            font-size: 0.5rem !important;
+            line-height: 2vh !important;
+        }
+
+        .break-line {
+            width: 10vw;
+        }
+    }
 </style>

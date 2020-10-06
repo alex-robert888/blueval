@@ -84,18 +84,18 @@
                 margin-top: 13vh;
 
                 > h1, > h2 {
-                    width: 85vw;
+                    width: 92vw;
                 }
 
                 > h1 {
-                    font-size: 3.3rem;
+                    font-size: 3rem;
                     font-weight: 100;
                 }
 
                 > h2 {
                     font-weight: 100;
                     margin-top: 2.5vh;
-                    font-size: 0.79rem;
+                    font-size: 0.75rem;
                     line-height: 2.15rem;
                 }
             }

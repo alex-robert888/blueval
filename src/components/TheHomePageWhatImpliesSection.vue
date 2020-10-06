@@ -68,6 +68,10 @@
             width: 60%;
             margin-top: 5vh;
 
+            > img {
+                height: 10vh;
+            }
+
             > p {
                 margin-left: 3vw;
                 width: 80%;
@@ -77,5 +81,9 @@
 
     .what-implies-icon {
         width: 3vw;
+    }
+
+    @media all and (max-width: 480px) {
+        
     }
 </style>

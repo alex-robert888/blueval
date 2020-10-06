@@ -2,6 +2,7 @@
     <section id='wrapper-home-page' class="main">
         <TheHomePageHeader />
         <TheHomePageHeroSection />
+        <section class="whitespace"></section>
         <TheHomePageOurMissionSection />
         <a name="de-ce" class="a--redirect"></a>
         <section class="whitespace"></section>

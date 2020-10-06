@@ -19,32 +19,53 @@
 </script>
 
 <style lang='scss' scoped>
-    #wrapper-the-home-page-our-mission-section > div {
-        margin-top: 15vh;
-        height: 40vh;
+    #wrapper-the-home-page-our-mission-section {
+        overflow-x: auto;
+        height: 45vh;
         width: 100%;
-        background-clip: content-box;
-        background: linear-gradient(90deg, rgba(241,242,255,1) 0%, rgba(220,243,255,1) 100%);
-        // overflow: auto;
         display: flex;
-        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        > div { 
+            width: 100%;
+            height: 80%;
+            background: linear-gradient(90deg, rgba(241,242,255,1) 0%, rgba(220,243,255,1) 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-        > p {
-            width: 55%;
-            text-align: center;
+            > p {
+                width: 80%;
+                text-align: center;
+            }
         }
     }
 
-    @media all and (max-width:  480px) {
-        #wrapper-the-home-page-our-mission-section > div {
-            margin-top: 0vh;
-            height: 55vh;
-            > p {
-                width: 88%;
-                font-size: 0.85rem;
-                line-height: 2.1rem;
-            }
-        }    
+    // @media all and (max-width: 970px) {
+    //     #wrapper-the-home-page-our-mission-section {
+    //         height: 80vh;
+    //         > div {
+    //             > p {
+    //                 width: 85%;
+    //                 font-size: 0.7rem;
+    //                 line-height: 2rem;
+    //             }
+    //         }    
+    //     }
+    // }  
+
+    @media all and (max-width: 480px) {
+        #wrapper-the-home-page-our-mission-section {
+            height: 70vh;
+            > div {
+                > p {
+                    width: 90%;
+                    font-size: 0.7rem;
+                    line-height: 2rem;
+                }
+            }    
+        }
     }     
+
 </style>
