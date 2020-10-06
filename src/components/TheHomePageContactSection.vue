@@ -4,9 +4,14 @@
         <div>
             <div class="left-side">
                 <a name="contact" class="a--redirect"></a>
-                <form name="contact" netlify>
+                <form name="contact"
+                      method="post"
+                      data-netlify="true"
+                      data-netlify-honeypot="bot-field"
+                >
+                    <input type="hidden" name="form-name" value="contact" />
                     <label for="email" class="text label">Email</label>
-                    <input v-model="form.email" type="text" name="email" id="" class="input-or-textarea">
+                    <input v-model="form.email" type="email" name="email" id="" class="input-or-textarea">
                 
                     <label for="mesaj" class="text label">Mesaj</label>
                     <textarea v-model="form.message" type="text" name="mesaj" id="" class="textarea input-or-textarea" />
