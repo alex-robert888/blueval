@@ -12,12 +12,8 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>            
             </nav>
+            <img src="../assets/images/hamburger-menu-icon.svg" alt="">
         </div>
-        <!-- <ScrollIndicator
-            height="0.55vh"
-            color="#0311D8"
-            background="none"
-        /> -->
     </section>
 </template>
 
@@ -53,13 +49,30 @@
             background-color: $base-white;
                 
             > img {
-                margin-left: 30vw;
+                &:first-of-type {
+                    margin-left: 30vw;
+                    @media all and (max-width: 864px) {
+                        margin-left: 0vw;
+                    }
+                }
+
+                &:last-of-type{
+                    width: 7.5vw;
+                    margin-left: auto;
+                    cursor: pointer;
+                    @media all and (min-width:  864px) {
+                        display: none;
+                    }   
+                }
             }
 
             > h1 {
                 margin-left: auto;
             }
             > nav {
+                @media all and (max-width:  864px) {
+                    display: none;
+                }
                 margin-left: auto;
                 > ul {
                     list-style: none;
@@ -76,4 +89,5 @@
             }
         }
     }
+    
 </style>

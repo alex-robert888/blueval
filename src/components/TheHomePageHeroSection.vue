@@ -29,7 +29,6 @@
 <style lang='scss' scoped>
     $the-hero-section-height: calc(100vh - #{$the-header-height});
 
-
     #wrapper-the-home-page-hero-section {
         margin-top: $the-header-height;
         height: $the-hero-section-height;
@@ -71,6 +70,35 @@
 
         .button-contact {
             margin-top: 6vh;
+        }
+    }
+
+    @media all and (max-width:  864px) {
+        #wrapper-the-home-page-hero-section {
+            > img {
+                display: none;
+            }
+
+            > article {
+                margin-left: 0vw;
+                margin-top: 13vh;
+
+                > h1, > h2 {
+                    width: 85vw;
+                }
+
+                > h1 {
+                    font-size: 3.5rem;
+                    font-weight: 100;
+                }
+
+                > h2 {
+                    font-weight: 100;
+                    margin-top: 2.5vh;
+                    font-size: 0.8rem;
+                    line-height: 2.15rem;
+                }
+            }
         }
     }
 </style>
