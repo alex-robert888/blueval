@@ -1,5 +1,5 @@
 <template>
-    <section id='wrapper-the-home-page-why-you-need' class='main-section'>
+    <section id='wrapper-the-home-page-why-you-need'>
         <div>
             <h2 class="heading">AM NEVOIE DE ANALIZĂ DE RISC DACĂ: </h2>
 
@@ -51,7 +51,6 @@
 
 <style lang='scss' scoped>
     #wrapper-the-home-page-why-you-need {
-        height: 130vh;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -63,6 +62,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            box-sizing: border-box;
+            padding: 2vh 0;
             > h2 {
                 color: $base-white;
             }
@@ -82,19 +83,21 @@
         }
     }
 
-    @media all and (max-width: 480px) {
+    @media all and (max-width: 800px) {
         #wrapper-the-home-page-why-you-need {
-
             > div {
                 > h2 {
-                    font-size: 1.2rem !important; 
+                    font-size: 0.8rem !important; 
                     color: $base-white;
+                    letter-spacing: 0.15rem;
                 }
 
                 > section {
                     grid-template-rows: 1fr 1fr 1fr;
                     grid-template-columns: 1fr 1fr;
-                    gap: 1rem;
+                    gap: 0.5rem;
+                    width: 98%; 
+                    margin-top: 3vh;
                 }
 
                 .icon {

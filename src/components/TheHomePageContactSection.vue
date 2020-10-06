@@ -62,14 +62,15 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        width: 100%;
         > div {
             display: flex;
             margin-top: 10vh;
-            width: 90%;
+            width: 100%;
         }
 
         .left-side {
-            height: 40vh;
+            width: 100%;
             .a--redirect {
                 margin-top: -10vh;
             }
@@ -103,6 +104,26 @@
         .right-side {
             margin-left: auto;
             margin-top: -5vh;
+        }
+    }
+
+    @media all and (max-width: 480px) {
+        #wrapper-the-home-page-contact-section {
+            .right-side {
+                display: none;
+            }
+
+            .left-side {
+                > form {
+                    > input, > textarea {
+                        width: 100%;
+                    }
+
+                    button {
+                        width: 40%;
+                    }
+                }
+            }
         }
     }
 

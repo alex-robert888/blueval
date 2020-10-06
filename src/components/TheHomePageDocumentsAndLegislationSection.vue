@@ -48,7 +48,6 @@
 <style lang='scss' scoped>
     #wrapper-the-home-page-documents-and-legislation-section {
         display: flex;
-        height: 50vh;
 
         .gap {
             width: 2.8vw;
@@ -101,10 +100,28 @@
             > div {
                 > ol {
                     list-style: none;
-
                     > li {
                         color: $base-dark-gray;
                     }
+                }
+            }
+        }
+    }
+
+    @media all and (max-width: 480px) {
+        #wrapper-the-home-page-documents-and-legislation-section {
+            flex-direction: column;
+
+            .left-side, .right-side {
+                width: 100%;
+                height: auto;
+
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                ol > li {
+                    margin-left: 5vw;
                 }
             }
         }

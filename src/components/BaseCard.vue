@@ -57,17 +57,17 @@
 
     @media all and (max-width: 480px) {
         .wrapper-base-card {
-            width: 90%;
-            height: 45vh;
+            width: 99%;
+            height: 33vh;
             padding: 0.5rem; 
         }
 
         h3 {
-            font-size: 0.85rem;
+            font-size: 0.75rem;
         }
 
         p {
-            font-size: 0.5rem !important;
+            font-size: 0.48rem !important;
             line-height: 2vh !important;
         }
 

@@ -41,13 +41,13 @@
 
 <style lang='scss' scoped>
     #the-home-page-what-implies-section {
-        height: 68vh;
         width: 100%;
+        overflow: auto;
     }
 
 
     #wrapper-what-implies-cards {
-        height: 68vh;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -65,7 +65,7 @@
         > div {
             display: flex;
             align-items: center;
-            width: 60%;
+            width: 100%;
             margin-top: 5vh;
 
             > img {
@@ -74,7 +74,8 @@
 
             > p {
                 margin-left: 3vw;
-                width: 80%;
+                width: 100%;
+                font-size: 0.85 rem !important;
             }
         }
     }
@@ -84,6 +85,25 @@
     }
 
     @media all and (max-width: 480px) {
-        
+        #wrapper-what-implies-cards {
+            box-sizing: border-box;
+            padding: 2vh 0;
+
+        }
+
+        #what-implies-cards {
+            padding: 2vh 0;
+            > div {
+                flex-direction: column;
+                align-items: flex-start;
+
+                > img {
+                    width: 14vw;
+                    margin-left: 2vw;
+                }
+            }
+        }
     }
+
+    
 </style>

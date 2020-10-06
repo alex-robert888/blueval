@@ -56,4 +56,8 @@
             }
         }
     }
+
+    @media all and (max-width: 480px) {
+        
+    }
 </style>
