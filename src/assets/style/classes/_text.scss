@@ -22,4 +22,10 @@
     color: #0311D8;
     margin-top: 8vh;
     margin-bottom: 6vh;
+
+    @media all and (max-width: 864px) {
+        letter-spacing: 0.4rem;
+        font-size: 1.7rem;
+        text-align: center;
+    }
 }

@@ -88,14 +88,14 @@
                 }
 
                 > h1 {
-                    font-size: 3.5rem;
+                    font-size: 3.3rem;
                     font-weight: 100;
                 }
 
                 > h2 {
                     font-weight: 100;
                     margin-top: 2.5vh;
-                    font-size: 0.8rem;
+                    font-size: 0.79rem;
                     line-height: 2.15rem;
                 }
             }

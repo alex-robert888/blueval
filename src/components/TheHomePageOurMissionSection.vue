@@ -25,7 +25,7 @@
         width: 100%;
         background-clip: content-box;
         background: linear-gradient(90deg, rgba(241,242,255,1) 0%, rgba(220,243,255,1) 100%);
-        overflow: auto;
+        // overflow: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -35,4 +35,16 @@
             text-align: center;
         }
     }
+
+    @media all and (max-width:  864px) {
+        #wrapper-the-home-page-our-mission-section > div {
+            margin-top: 0vh;
+            height: 55vh;
+            > p {
+                width: 88%;
+                font-size: 0.85rem;
+                line-height: 2.1rem;
+            }
+        }    
+    }     
 </style>
