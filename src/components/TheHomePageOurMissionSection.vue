@@ -36,7 +36,7 @@
         }
     }
 
-    @media all and (max-width:  864px) {
+    @media all and (max-width:  480px) {
         #wrapper-the-home-page-our-mission-section > div {
             margin-top: 0vh;
             height: 55vh;

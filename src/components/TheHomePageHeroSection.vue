@@ -73,7 +73,7 @@
         }
     }
 
-    @media all and (max-width:  864px) {
+    @media all and (max-width:  480px) {
         #wrapper-the-home-page-hero-section {
             > img {
                 display: none;

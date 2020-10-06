@@ -51,7 +51,7 @@
             > img {
                 &:first-of-type {
                     margin-left: 30vw;
-                    @media all and (max-width: 864px) {
+                    @media all and (max-width: 480px) {
                         margin-left: 0vw;
                     }
                 }
@@ -60,7 +60,7 @@
                     width: 7.5vw;
                     margin-left: auto;
                     cursor: pointer;
-                    @media all and (min-width:  864px) {
+                    @media all and (min-width:  480px) {
                         display: none;
                     }   
                 }
@@ -70,7 +70,7 @@
                 margin-left: auto;
             }
             > nav {
-                @media all and (max-width:  864px) {
+                @media all and (max-width:  480px) {
                     display: none;
                 }
                 margin-left: auto;
