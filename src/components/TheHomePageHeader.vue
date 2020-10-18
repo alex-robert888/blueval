@@ -52,17 +52,21 @@
                 &:first-of-type {
                     margin-left: 30vw;
                     height: 3.7vh;
-                    @media all and (max-width: 900px) {
+                    @media all and (max-width: 1310px) {
                         margin-left: 0vw;
                     }
                 }
 
                 &:last-of-type{
-                    width: 7.25vw;
+                    width: 3rem;
                     margin-left: auto;
                     cursor: pointer;
-                    @media all and (min-width: 900px) {
+                    @media all and (min-width: 1310px) {
                         display: none;
+                    } 
+                    
+                    @media all and (max-width: 650px) {
+                        width: 1.9rem;
                     }   
                 }
             }
@@ -71,7 +75,7 @@
                 margin-left: auto;
             }
             > nav {
-                @media all and (max-width: 900px) {
+                @media all and (max-width: 1310px) {
                     display: none;
                 }
                 margin-left: auto;

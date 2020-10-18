@@ -45,19 +45,47 @@
             z-index: 99;
             height: 87.5vh;
             width: 24vw;
+
+            @media all and (max-width: 1310px) {
+                display: none;
+            }
         }
 
         > article {
+
+            @media all and (max-width: 1310px) {
+                 margin-left: 8vw;
+            }
             margin-left: 30vw;
-            margin-top: 13vh;
+            margin-top: 11vh;
 
             > h1, > h2 {
-                width: 40vw;
+                width: 740px;
+                @media all and (max-width: 960px) {
+                    width: 500px;
+                }
+
+                @media all and (max-width: 570px) {
+                    width: 330px;
+                }
+
+                @media all and (max-width: 350px) {
+                    width: 270px;
+                }
             }
 
             > h1 {
                 font-size: 5.5rem;
                 font-weight: 100;
+                 @media all and (max-width: 960px){
+                    font-size: 4rem;
+                }
+                @media all and (max-width: 570px) {
+                    font-size: 3rem;
+                }
+                @media all and (max-width: 350px) {
+                    font-size: 2rem;
+                }
             }
 
             > h2 {
@@ -65,6 +93,15 @@
                 margin-top: 3.5vh;
                 font-size: 1.05rem;
                 line-height: 2.75rem;
+                @media all and (max-width: 960px) {
+                    font-size: 0.86rem;
+                }
+                @media all and (max-width: 570px) {
+                    font-size: 0.69rem;
+                }
+                @media all and (max-width: 350px) {
+                    font-size: 0.57rem;
+                }
             }
         }
 
