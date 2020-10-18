@@ -42,4 +42,20 @@
             font-size: 0.9rem;
         }
     }
+
+    @media all and (max-width: 1500px) {
+        .wrapper-base-faq-card {
+            .question {
+                > h3 {
+                    margin-left: 1rem;
+                    line-height: 1.5rem;
+                }
+            }
+
+            > p {
+                margin-left: 2.38rem;
+                margin-top: 0.8rem;
+            }
+        }
+    }
 </style>

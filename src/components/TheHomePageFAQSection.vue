@@ -40,7 +40,6 @@
 <style lang='scss' scoped>
     #wrapper-the-home-page-faq-section {
         width: 100%;
-        height: 50vh;
         display: flex;
         overflow: auto;
         > div {
@@ -57,7 +56,17 @@
         }
     }
 
-    @media all and (max-width: 480px) {
-        
+    @media all and (max-width: 1200px) {
+        #wrapper-the-home-page-faq-section {
+            > div {
+                flex-direction: column;
+
+                .base-faq-card {
+                    width: 95%;
+                    align-items: center;
+                }
+            }
+
+        }
     }
 </style>
