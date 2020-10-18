@@ -12,7 +12,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>            
             </nav>
-            <img src="../assets/images/hamburger-menu-icon.svg" alt="">
+            <img src="../assets/images/hamburger-menu-icon.svg" alt="" v-on:click="onHamburgerMenuClick()">
         </div>
     </section>
 </template>
@@ -29,7 +29,11 @@
         }
     })
     export default class TheHomePageHeader extends Vue {
-       
+       onHamburgerMenuClick() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            this.$store.commit("openOverlayMenu");
+       }
     }
 </script>
 

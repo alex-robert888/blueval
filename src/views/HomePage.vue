@@ -1,14 +1,6 @@
 <template>
     <section id='wrapper-home-page' class="main">
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
-            </div>
-        </div>
+        <OverlayMenu v-if="isOverlayMenuOpen()"/>
         <TheHomePageHeader />
         <TheHomePageHeroSection />
         <section class="whitespace"></section>
@@ -41,6 +33,7 @@
     import TheHomePageDocumentsAndLegislationSection from '@/components/TheHomePageDocumentsAndLegislationSection.vue';
     import TheHomePageFAQSection from '@/components/TheHomePageFAQSection.vue';
     import TheHomePageContactSection from '@/components/TheHomePageContactSection.vue';
+    import OverlayMenu from '@/components/OverlayMenu.vue';
 
     @Component({
         components: {
@@ -51,11 +44,14 @@
             TheHomePageWhatImpliesSection,
             TheHomePageDocumentsAndLegislationSection,
             TheHomePageFAQSection,
-            TheHomePageContactSection
+            TheHomePageContactSection,
+            OverlayMenu
         }
     })
     export default class HomePage extends Vue {
-       
+       isOverlayMenuOpen() {
+           return this.$store.state.isOverlayMenuOpen;
+       }
     }
 </script>
 
