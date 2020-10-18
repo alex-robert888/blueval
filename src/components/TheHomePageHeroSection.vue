@@ -73,6 +73,12 @@
         }
     }
 
+    @media all and (max-width: 1699px) {
+        h1 {
+            font-size: 2.33rem;
+        }
+    }
+
     @media all and (max-width:  480px) {
         #wrapper-the-home-page-hero-section {
             > img {
