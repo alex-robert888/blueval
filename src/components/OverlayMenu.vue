@@ -60,7 +60,7 @@
             align-items: center;
             
             a {
-                font-size: 2rem;
+                font-size: 2.1rem;
             }
         }
     }
