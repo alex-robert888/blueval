@@ -56,6 +56,9 @@
             @media all and (max-width: 1310px) {
                  margin-left: 8vw;
             }
+            @media all and (max-width: 570px) {
+                 margin-top: 7.5vh;
+            }
             margin-left: 30vw;
             margin-top: 11vh;
 
@@ -70,7 +73,7 @@
                 }
 
                 @media all and (max-width: 350px) {
-                    width: 270px;
+                    width: 285px;
                 }
             }
 

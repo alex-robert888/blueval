@@ -39,6 +39,10 @@
                 width: 80%;
                 text-align: center;
             }
+
+            > h2 {
+                text-align: center;
+            }
         }
     }
 
@@ -66,6 +70,23 @@
                 }
             }    
         }
-    }     
+    }   
+    
+    @media all and (min-width: 480px) and (max-width: 970px) {
+        #wrapper-the-home-page-our-mission-section {
+            height: 70vh;
+            > div {
+                > p {
+                    width: 90%;
+                    font-size: 0.9rem !important;
+                    line-height: 2rem;
+                }
+
+                > h2 {
+                   font-size: 1.8rem !important;
+                }
+            }    
+        }
+    }
 
 </style>
