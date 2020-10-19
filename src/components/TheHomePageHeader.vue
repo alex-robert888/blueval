@@ -1,7 +1,6 @@
 <template>
     <section id='wrapper-the-home-page-header'>
         <div id="navigation-bar" class='main-section'>
-            <img src="../assets/images/logo.svg" alt="" v-on:click.prevent="onHamburgerMenuClick">
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -13,7 +12,7 @@
                 </ul>            
             </nav>
             <button class="hamburger-menu-icon-button" v-on:click.prevent="onHamburgerMenuClick">
-                <img src="../assets/images/hamburger-menu-icon.svg" alt="" class="hamburger-menu-icon">
+                <img src="../assets/images/hamburger-menu-icon.svg" alt="asdads" class="hamburger-menu-icon">
             </button>
         </div>
     </section>
