@@ -1,7 +1,7 @@
 <template>
     <section id='wrapper-the-home-page-header'>
         <div id="navigation-bar" class='main-section'>
-            <img src="../assets/images/logo.svg" alt="" v-on:click="onHamburgerMenuClick()">
+            <img src="../assets/images/logo.svg" alt="" v-on:click.prevent="onHamburgerMenuClick">
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -12,7 +12,9 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>            
             </nav>
-            <img src="../assets/images/hamburger-menu-icon.svg" alt="" v-on:click="onHamburgerMenuClick()">
+            <button class="hamburger-menu-icon-button">
+                <img src="../assets/images/hamburger-menu-icon.svg" alt="" class="hamburger-menu-icon" v-on:click.prevent="onHamburgerMenuClick">
+            </button>
         </div>
     </section>
 </template>
@@ -61,19 +63,26 @@
                         margin-left: 0vw;
                     }
                 }
+            }
 
-                &:last-of-type{
-                    width: 3rem;
-                    margin-left: auto;
-                    cursor: pointer;
-                    @media all and (min-width: 1310px) {
-                        display: none;
-                    } 
-                    
-                    @media all and (max-width: 650px) {
-                        width: 1.9rem;
-                    }   
-                }
+            .hamburger-menu-icon-button {
+                margin-left: auto;
+                border: none;
+                background: none;
+                outline: none;
+            }
+
+            .hamburger-menu-icon {
+                width: 3rem;
+                
+                cursor: pointer;
+                @media all and (min-width: 1310px) {
+                    display: none;
+                } 
+                
+                @media all and (max-width: 650px) {
+                    width: 1.9rem;
+                }   
             }
 
             > h1 {
