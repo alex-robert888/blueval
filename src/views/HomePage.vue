@@ -3,6 +3,7 @@
         <OverlayMenu v-if="isOverlayMenuOpen()"/>
         <TheHomePageHeader />
         <TheHomePageHeroSection />
+        <h1>{{printStoreState()}}</h1>
         <section class="whitespace"></section>
         <TheHomePageOurMissionSection />
         <a name="de-ce" class="a--redirect"></a>
@@ -52,6 +53,10 @@
        isOverlayMenuOpen() {
            return this.$store.state.isOverlayMenuOpen;
        }
+
+       printStoreState() {
+           return `The value of the store state is: ${this.$store.state.isOverlayMenuOpen}`;
+       }
     }
 </script>
 
@@ -63,5 +68,9 @@
     .whitespace {
         height: 5vh;
         width: 100%;
+    }
+
+    h1 {
+        color: red;
     }
 </style>
