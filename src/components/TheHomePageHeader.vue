@@ -12,8 +12,8 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>            
             </nav>
-            <button class="hamburger-menu-icon-button">
-                <img src="../assets/images/hamburger-menu-icon.svg" alt="" class="hamburger-menu-icon" v-on:click.prevent="onHamburgerMenuClick">
+            <button class="hamburger-menu-icon-button" v-on:click.prevent="onHamburgerMenuClick">
+                <img src="../assets/images/hamburger-menu-icon.svg" alt="" class="hamburger-menu-icon">
             </button>
         </div>
     </section>
