@@ -22,7 +22,7 @@
     @Component({})
     export default class OverlayMenu extends Vue {
        closeOverlayMenu() {
-           this.$store.commit("closeOverlayMenu()");
+           this.$store.commit("closeOverlayMenu");
        }
     }
 </script>
