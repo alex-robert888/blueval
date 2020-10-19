@@ -30,9 +30,9 @@
     })
     export default class TheHomePageHeader extends Vue {
        onHamburgerMenuClick() {
+            console.log(`Opening hamburge menu ${this.$store.state.isOverlayMenuOpen}`);
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
-            console.log(`Opening hamburge menu ${this.$store.state.isOverlayMenuOpen}`);
             this.$store.commit("openOverlayMenu");
        }
     }
