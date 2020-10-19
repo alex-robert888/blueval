@@ -3,7 +3,6 @@
         <OverlayMenu v-if="isOverlayMenuOpen()"/>
         <TheHomePageHeader />
         <TheHomePageHeroSection />
-        <h1>{{printStoreState()}}</h1>
         <section class="whitespace"></section>
         <TheHomePageOurMissionSection />
         <a name="de-ce" class="a--redirect"></a>
