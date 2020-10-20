@@ -25,6 +25,7 @@
     })
     export default class TheHomePageHeroSection extends Vue {
         contactOnClick() {
+            console.log('contact button test');
             alert('redirecting you to contact section...');
         }
     }
