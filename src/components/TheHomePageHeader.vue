@@ -12,15 +12,14 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>            
             </nav>
-            <!-- v-on:click.prevent="onHamburgerMenuClick" -->
-            <button id="h-menu" class="hamburger-menu-icon-button" >
+            <button class="hamburger-menu-icon-button" v-on:click.prevent="onHamburgerMenuClick">
                 <img src="../assets/images/hamburger-menu-icon.svg" alt="" class="hamburger-menu-icon" >
             </button>
         </div>
     </section>
 </template>
 
-<script lang='js'>
+<script lang='ts'>
     import Vue from 'vue';
     import { Component } from 'vue-property-decorator';
     import ScrollIndicator from './ScrollIndicator.vue';
@@ -32,18 +31,12 @@
         }
     })
     export default class TheHomePageHeader extends Vue {
-        mounted(){
-             document.querySelector('#h-menu').addEventListener('click',function() {
-                alert('helloooooo');
-             });
-        }
-
-        onHamburgerMenuClick() {
+       onHamburgerMenuClick() {
             console.log(`Opening hamburger menu ${this.$store.state.isOverlayMenuOpen}`);
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
             this.$store.commit("openOverlayMenu");
-        }
+       }
     }
 </script>
 
