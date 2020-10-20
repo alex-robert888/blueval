@@ -5,7 +5,9 @@
         <article>
             <h1>Evaluări de risc la securitate fizică</h1>
             <h2>Asigură-ți securitatea afacerii tale apelând la profesioniști. Procesul este simplu și gândit astfel încât activitatea ta să nu fie perturbată, în timp ce noi lucrăm la standarde de exigență ridicate. Suntem interesați să realizăm și să îți livrăm un produs pe care să îl utilizezi ușor, rapid și predictibil.</h2>
-            <ButtonContact class="button-contact" />
+            <button class="button-contact" v-on:click.prevent="contactOnClick">
+                <ButtonContact  />
+            </button>
         </article>
     </section>
 </template>
@@ -22,7 +24,9 @@
         }
     })
     export default class TheHomePageHeroSection extends Vue {
-       
+        contactOnClick() {
+            alert('redirecting you to contact section...');
+        }
     }
 </script>
 
@@ -110,6 +114,9 @@
 
         .button-contact {
             margin-top: 6vh;
+            background: none;
+            border: none;
+            outline: none;
         }
     }
 
