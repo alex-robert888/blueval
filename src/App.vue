@@ -1,6 +1,7 @@
 <template>
     <div id='wrapper-app'>
-        <router-view />
+        <router-view 
+        />
         <h1>{{ getAllListeners() }}</h1>
     </div>
 </template>
