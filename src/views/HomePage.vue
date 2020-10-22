@@ -14,8 +14,10 @@
         <a name="documente" class="a--redirect"></a>
         <section class="whitespace"></section>
         <TheHomePageDocumentsAndLegislationSection />
+        <a name="contact" class="a--redirect"></a>
         <section class="whitespace"></section>
         <TheHomePageContactSection />
+        <a name="faq" class="a--redirect"></a>
         <section class="whitespace"></section>
         <TheHomePageFAQSection />
         <section class="whitespace"></section>
@@ -74,5 +76,9 @@
 
     h1 {
         color: red;
+    }
+
+    a {
+        padding-top: -10vh;
     }
 </style>

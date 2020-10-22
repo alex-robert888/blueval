@@ -5,9 +5,9 @@
         <article>
             <h1>Evaluări de risc la securitate fizică</h1>
             <h2>Asigură-ți securitatea afacerii tale apelând la profesioniști. Procesul este simplu și gândit astfel încât activitatea ta să nu fie perturbată, în timp ce noi lucrăm la standarde de exigență ridicate. Suntem interesați să realizăm și să îți livrăm un produs pe care să îl utilizezi ușor, rapid și predictibil.</h2>
-            <button class="button-contact" v-on:click.prevent="contactOnClick">
+            <a id="a-button-contact" href="#contact" class="button-contact">
                 <ButtonContact  />
-            </button>
+            </a>
         </article>
     </section>
 </template>
@@ -34,6 +34,11 @@
 <style lang='scss' scoped>
     $the-hero-section-height: calc(100vh - #{$the-header-height});
 
+    #a-button-contact {
+        display: block;
+        margin-top: 4vh;
+    }
+
     #wrapper-the-home-page-hero-section {
         margin-top: $the-header-height;
         height: $the-hero-section-height;
@@ -57,7 +62,6 @@
         }
 
         > article {
-
             @media all and (max-width: 1310px) {
                  margin-left: 8vw;
             }
@@ -111,13 +115,6 @@
                     font-size: 0.57rem;
                 }
             }
-        }
-
-        .button-contact {
-            margin-top: 6vh;
-            background: none;
-            border: none;
-            outline: none;
         }
     }
 

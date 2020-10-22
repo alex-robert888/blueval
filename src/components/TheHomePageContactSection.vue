@@ -71,9 +71,6 @@
 
         .left-side {
             width: 100%;
-            .a--redirect {
-                margin-top: -10vh;
-            }
 
             > form {
                 display: flex;
