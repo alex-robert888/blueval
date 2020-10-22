@@ -19,6 +19,7 @@
         <section class="whitespace"></section>
         <TheHomePageFAQSection />
         <section class="whitespace"></section>
+        <TheHomePageFooter />
     </section>
 </template>
 
@@ -33,6 +34,7 @@
     import TheHomePageDocumentsAndLegislationSection from '@/components/TheHomePageDocumentsAndLegislationSection.vue';
     import TheHomePageFAQSection from '@/components/TheHomePageFAQSection.vue';
     import TheHomePageContactSection from '@/components/TheHomePageContactSection.vue';
+    import TheHomePageFooter from '@/components/TheHomePageFooter.vue';
     import OverlayMenu from '@/components/OverlayMenu.vue';
 
     @Component({
@@ -45,6 +47,7 @@
             TheHomePageDocumentsAndLegislationSection,
             TheHomePageFAQSection,
             TheHomePageContactSection,
+            TheHomePageFooter,
             OverlayMenu
         }
     })
