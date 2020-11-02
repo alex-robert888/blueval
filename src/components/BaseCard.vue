@@ -29,7 +29,7 @@
         border: 1px solid $base-white;   
         border-radius: 4px;    
         box-sizing: border-box;
-        padding: 1.5rem; 
+        padding: 1.5rem 2px; 
     }
 
     h3, p {
@@ -38,11 +38,12 @@
 
     h3 {
         margin-top: 3vh;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 400;
         color: #99F3FB;
-        letter-spacing: 0.22rem
-        
+        letter-spacing: 0.22rem;
+        max-width: 100%;
+
         // letter-spacing: 0.6rem;
         // font-size: 2.05rem;
         // font-weight: 400;
