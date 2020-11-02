@@ -79,6 +79,7 @@
 
             .icon {
                 height: 7vh;
+                width: 65%;
             }
         }
     }

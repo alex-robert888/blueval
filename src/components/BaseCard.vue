@@ -4,7 +4,7 @@
         <slot name="icon" />
         <h3><slot name="heading" /></h3>
         <img src="../assets/images/break-line.svg" alt="" class="break-line">
-        <p class="text"><slot name="text" /></p>
+        <p><slot name="text" /></p>
     </article>
 </template>
 
@@ -42,6 +42,19 @@
         font-weight: 400;
         color: #99F3FB;
         letter-spacing: 0.22rem
+        
+        // letter-spacing: 0.6rem;
+        // font-size: 2.05rem;
+        // font-weight: 400;
+        // color: #0311D8;
+        // // margin-top: 8vh;
+        // margin-bottom: 6vh;
+
+        // @media all and (max-width: 480px) {
+        //     letter-spacing: 0.4rem;
+        //     font-size: 1.1rem;
+        //     text-align: center;
+        // }
     }
 
     p {
@@ -49,6 +62,7 @@
         color: white;
         font-size: 0.8rem !important;
         line-height: 3vh !important;
+        font-weight: 100;
     }
 
     .break-line {

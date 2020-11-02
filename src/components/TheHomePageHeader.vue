@@ -1,7 +1,7 @@
 <template>
     <section id='wrapper-the-home-page-header'>
         <div id="navigation-bar" class='main-section'>
-            <img src="../assets/images/logo.svg" alt="">
+            <img src="../assets/images/logo.png" alt="">
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
