@@ -75,6 +75,7 @@
         li {
             margin-top: 1vh;
             line-height: 4vh !important;
+            font-size: 1rem !important;
         }
 
         .left-side {
