@@ -4,7 +4,9 @@
         <img src="../assets/images/business-building.jpg" alt="">
         <article>
             <h1>Evaluări de risc la securitate fizică</h1>
-            <h2>Asigură-ți securitatea afacerii tale apelând la profesioniști. Procesul este simplu și gândit astfel încât activitatea ta să nu fie perturbată, în timp ce noi lucrăm la standarde de exigență ridicate. Suntem interesați să realizăm și să îți livrăm un produs pe care să îl utilizezi ușor, rapid și predictibil.</h2>
+            <h2>Covasna, Harghita si județele limitrofe</h2>
+            <hr>
+            <h3>Asigură-ți securitatea afacerii tale apelând la profesioniști. Procesul este simplu și gândit astfel încât activitatea ta să nu fie perturbată, în timp ce noi lucrăm la standarde de exigență ridicate. Suntem interesați să realizăm și să îți livrăm un produs pe care să îl utilizezi ușor, rapid și predictibil.</h3>
             <a id="a-button-contact" href="#contact" class="button-contact">
                 <ButtonContact  />
             </a>
@@ -71,7 +73,7 @@
             margin-left: 30vw;
             margin-top: 11vh;
 
-            > h1, > h2 {
+            > h1, > h2, > h3 {
                 width: 740px;
                 @media all and (max-width: 960px) {
                     width: 500px;
@@ -101,9 +103,26 @@
             }
 
             > h2 {
+                margin-top: 1.5rem;
+                font-size: 1.1rem;
+                font-weight: 100;
+                color: #9e9e9e;
+                @media all and (max-width: 960px){
+                    font-size: 4rem;
+                }
+                @media all and (max-width: 570px) {
+                    font-size: 3rem;
+                }
+                @media all and (max-width: 350px) {
+                    font-size: 2rem;
+                }
+            }
+
+
+            > h3 {
                 font-weight: 100;
                 margin-top: 3.5vh;
-                font-size: 1.05rem;
+                font-size: 1.0rem;
                 line-height: 2.75rem;
                 @media all and (max-width: 960px) {
                     font-size: 0.86rem;
@@ -114,6 +133,12 @@
                 @media all and (max-width: 350px) {
                     font-size: 0.57rem;
                 }
+            }
+
+            > hr {
+                margin: .2rem 0;
+                background-color: red;
+                border-color:#f5f5f5;
             }
         }
     }
